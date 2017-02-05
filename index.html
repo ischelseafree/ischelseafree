@@ -15,6 +15,26 @@
     body {
       padding-top: 50px;
     }
+    h1.navbar-brand {
+        color: #fff!important;
+        display: inline-block;
+        font-size: 36px;
+        height: auto;
+        padding: 40px 0;
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-header {
+      float: none;
+    }
+    .navbar-inverse {
+      background-color: #000;
+      margin-bottom: 0;
+    }
+    .twitter {
+      margin: 20px auto 50px;
+      text-align: center;
+    }
     .starter-template {
       padding: 40px 15px;
       text-align: center;
@@ -29,6 +49,7 @@
     }
     #clock {
       margin-bottom: 0;
+      font-weight: bold;
     }
     #ifYes {
       /*display: none;*/
@@ -37,6 +58,10 @@
     .visible {
       /*display: inline-block;*/
       /*visibility: visible;*/
+    }
+    #status {
+        margin-top: 40px;
+        display: inline-block;
     }
   </style>
 <!-- <link rel="stylesheet" type="text/css" href="socialwidgets.css"> -->
@@ -53,13 +78,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Is Chelsea Manning Free Yet?</a>
+      <h1 class="navbar-brand" href="#">Is Chelsea Manning Free Yet?</h1>
     </div>
     <div id="navbar" class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
         <!-- <li class="active"><a href="#">Home</a></li> -->
-        <!-- <li><a href="#about">About</a></li> -->
-        <!-- <li><a href="#contact">Contact</a></li> -->
       </ul>
     </div>
   </div>
@@ -68,7 +91,7 @@
 <div class="container">
   <div class="starter-template">
     <!-- <h1>Random Question?</h1> -->
-    <h1>Is Chelsea Manning Free Yet?</h1>
+    <!-- <h1>Is Chelsea Manning Free Yet?</h1> -->
     <h1><span id="status">Status:</span></h1>
 
     <div id="ifYes">
@@ -82,14 +105,10 @@
   </div>
 </div>
 
-<a class="twitter-timeline" href="https://twitter.com/xychelsea">Tweets by xychelsea</a>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<!-- <h1>Why was she in jail in the first place?</h1>
-<p>Fill in answer.</p>
-
-<h1>What can we do to support her until she's released?</h1>
-<p>Fill in answer.</p> -->
+<!-- <a href="https://twitter.com/intent/tweet?screen_name=xychelsea" class="twitter-mention-button" data-show-count="false">Tweet to @xychelsea</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+<div class="twitter">
+  <a href="https://twitter.com/xychelsea" class="twitter-follow-button" data-show-count="false">Follow @xychelsea</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 <script type="text/javascript">
   // Turn on Bootstrap
